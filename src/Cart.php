@@ -7,6 +7,9 @@ class Cart
 
     public function useCart(string $order): string
     {
+        if (strpos($order, 'leche')) {
+            return "leche x1";
+        }
         return "pan x1";
     }
 }
