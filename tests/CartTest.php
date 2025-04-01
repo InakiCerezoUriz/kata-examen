@@ -10,7 +10,7 @@ class CartTest extends TestCase
     /**
      * @test
      */
-    public function addProductWithoutNumber(): void
+    public function addProductWithoutNumberReturnsProductx1(): void
     {
         $product = new Cart();
 
