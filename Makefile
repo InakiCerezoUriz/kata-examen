@@ -10,6 +10,7 @@ build-container:
 
 start:
 	docker start docker-php-boilerplate
+git commit -m "[refactor] - Eliminados tests repetidos y creado un código general para añadir un elemento único"
 
 test: start
 	docker exec docker-php-boilerplate ./vendor/bin/phpunit tests
