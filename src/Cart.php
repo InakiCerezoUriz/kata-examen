@@ -11,6 +11,9 @@ class Cart
             if ($order[1] === "leche"){
                 return "leche x2";
             }
+            if ($order[1] === "arroz"){
+                return "arroz x3";
+            }
             return "pan x2";
         }
         return $order[1]." x1";

@@ -43,5 +43,17 @@ class CartTest extends TestCase
         $this->assertEquals("leche x2", $result);
     }
 
+    /**
+     * @test
+     */
+    public function addRiceSpecifyingAmountOf3ReturnsRicex3(): void
+    {
+        $product = new Cart();
+
+        $result = $product->useCart('Añadir arroz 3');
+
+        $this->assertEquals("arroz x3", $result);
+    }
+
 
 }
