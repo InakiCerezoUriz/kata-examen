@@ -31,5 +31,18 @@ class CartTest extends TestCase
         $this->assertEquals("pan x2", $result);
     }
 
+    /**
+     * @test
+     */
+    public function addTwoDifferentProductsReturnsBothProducts(): void
+    {
+        $product = new Cart();
+
+        $product->useCart('Añadir pan 1');
+        $result = $product->useCart('Añadir leche 1');
+
+        $this->assertEquals("pan x1, leche x1", $result);
+    }
+
 
 }
