@@ -34,7 +34,7 @@ class CartTest extends TestCase
     /**
      * @test
      */
-    public function addMilkSpecifyingAmountOf3ReturnsMilkx3(): void
+    public function addMilkSpecifyingAmountOf2ReturnsMilkx2(): void
     {
         $product = new Cart();
 
