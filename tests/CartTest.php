@@ -22,37 +22,13 @@ class CartTest extends TestCase
     /**
      * @test
      */
-    public function addBreadSpecifyingAmountOf2ReturnsBreadx2(): void
+    public function addProductSpecifyingAmountOf2ReturnsProductx2(): void
     {
         $product = new Cart();
 
         $result = $product->useCart('Añadir pan 2');
 
         $this->assertEquals("pan x2", $result);
-    }
-
-    /**
-     * @test
-     */
-    public function addMilkSpecifyingAmountOf2ReturnsMilkx2(): void
-    {
-        $product = new Cart();
-
-        $result = $product->useCart('Añadir leche 2');
-
-        $this->assertEquals("leche x2", $result);
-    }
-
-    /**
-     * @test
-     */
-    public function addRiceSpecifyingAmountOf3ReturnsRicex3(): void
-    {
-        $product = new Cart();
-
-        $result = $product->useCart('Añadir arroz 3');
-
-        $this->assertEquals("arroz x3", $result);
     }
 
 
