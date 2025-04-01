@@ -12,7 +12,7 @@ start:
 	docker start docker-php-boilerplate
 
 test: start
-	docker exec docker-php-boilerplate ./vendor/bin/phpunit tests/$(target)
+	docker exec docker-php-boilerplate ./vendor/bin/phpunit tests
 
 shell: start
 	docker exec -it docker-php-boilerplate /bin/bash
