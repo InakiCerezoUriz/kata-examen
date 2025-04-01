@@ -22,7 +22,7 @@ class CartTest extends TestCase
     /**
      * @test
      */
-    public function addBreadx2ReturnsProductx2(): void
+    public function addBreadSpecifyingAmountOf2ReturnsBreadx2(): void
     {
         $product = new Cart();
 
@@ -30,6 +30,5 @@ class CartTest extends TestCase
 
         $this->assertEquals("pan x2", $result);
     }
-
 
 }
